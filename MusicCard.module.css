@@ -1,0 +1,95 @@
+.main-container {
+    background-color: #ffd497;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    color: #fb918f;
+    border-radius: 1.5rem;
+    padding: 1.25rem;
+    margin-top: 1rem;
+    width: 45%;
+    max-width: 320px;
+    box-sizing: border-box;
+}
+
+.art-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.art-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+.playing .overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.play-icon {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.playing {
+    box-shadow: 0 0 0 4px #fb918f;
+}
+
+.bars {
+    position: absolute;
+    bottom: 0.6rem;
+    left: 0.6rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 16px;
+}
+
+.bars span {
+    width: 3px;
+    background: #fff;
+    animation: bounce 0.8s infinite ease-in-out;
+}
+
+.bars span:nth-child(1) { animation-delay: 0s; height: 60%; }
+.bars span:nth-child(2) { animation-delay: 0.2s; height: 100%; }
+.bars span:nth-child(3) { animation-delay: 0.4s; height: 40%; }
+
+@keyframes bounce {
+    0%, 100% { transform: scaleY(0.4); }
+    50% { transform: scaleY(1); }
+}
+
+.title {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.desc {
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}

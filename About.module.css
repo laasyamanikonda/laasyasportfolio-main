@@ -1,0 +1,13 @@
+.main-container {
+    background-color: #f4ede4;
+    color: #5c5470;
+    padding: 3rem;
+}
+
+.content {
+    max-width: 700px;
+    margin: 1.5rem auto 0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-family: "Quicksand", serif;
+}

@@ -1,0 +1,36 @@
+.main-container {
+    background-color: #fba58b;
+    color: #F0E6EF;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+h1 {
+    padding-left: 3rem;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: wrap;
+    gap: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.flex-item {
+    flex: 1 1 calc(50% - 2rem); /* two per row */
+    max-width: calc(50% - 2rem);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+a:visited, a:active, a:focus a:hover {
+    color: inherit; /* or set to a color you prefer */
+    text-decoration: none; /* Optional, to remove underline if present */
+}
