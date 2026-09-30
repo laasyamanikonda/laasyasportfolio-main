@@ -18,6 +18,6 @@
     color: #fb918f;
 }
 
-.nav-item :hover{
+.nav-item:hover {
     font-weight: bold;
 }
