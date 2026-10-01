@@ -1,12 +1,25 @@
-import styles from './NavBar.module.css'
+
+import { NavLink } from "react-router-dom";
+import styles from "./NavBar.module.css";
 
 export default function NavBar() {
-    return (
-        <nav className={styles['main-nav']}>
-            <a href="#about" className={styles['nav-item']}>about</a>
-            <a href="#experience" className={styles['nav-item']}>experience</a>
-            <a href="#projects" className={styles['nav-item']}>projects</a>
-            <a href="#funstuff" className={styles['nav-item']}>fun stuff</a>
-        </nav>
-    )
+  return (
+    <nav className={styles["main-nav"]}>
+      <NavLink to="/" end className={styles["nav-item"]}>
+        home
+      </NavLink>
+      <NavLink to="/about" className={styles["nav-item"]}>
+        about
+      </NavLink>
+      <NavLink to="/experience" className={styles["nav-item"]}>
+        experience
+      </NavLink>
+      <NavLink to="/projects" className={styles["nav-item"]}>
+        projects
+      </NavLink>
+      <NavLink to="/favorites" className={styles["nav-item"]}>
+        favorites
+      </NavLink>
+    </nav>
+  );
 }

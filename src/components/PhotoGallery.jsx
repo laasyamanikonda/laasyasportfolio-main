@@ -1,10 +1,11 @@
 import styles from './PhotoGallery.module.css'
 import PolaroidPhoto from './PolaroidPhoto'
+import fleabag from '/src/assets/fleabag.jpg'
 
 // Add your own photos here, same pattern as projectlist / musiclist.
 // 1. drop the image into src/assets
 // 2. import it up top: import beach from '../assets/beach.png'
-// 3. add an entry below   
+// 3. add an entry below   x`
 //
 // example:
 // import beach from '../assets/beach.png'
@@ -12,7 +13,9 @@ import PolaroidPhoto from './PolaroidPhoto'
 //   { img: beach, caption: "summer 2025", rotation: -4, uniqueId: 1 },
 // ]
 
-const photos = []
+const photos = [
+    { img: fleabag, caption: "fleabag", rotation: -4, uniqueId: 1 }
+]
 
 export default function PhotoGallery() {
     return (

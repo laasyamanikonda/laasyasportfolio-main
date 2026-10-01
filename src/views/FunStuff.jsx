@@ -1,22 +1,22 @@
-import styles from './FunStuff.module.css'
+import styles from '/src/views/FunStuff.module.css'
 import frank from '/src/assets/frankie.png'
 import phoebe from '/src/assets/phoebe.png'
-import MusicCard from '../components/MusicCard'
-import ScrapbookSection from '../components/ScrapbookSection'
+import MusicCard from '/src/components/MusicCard.jsx'
+import ScrapbookSection from '/src/components/ScrapbookSection.jsx'
 
 const musiclist = [
     {
       title:"white ferrari, by frank ocean",
       src:"/whiteFerrari.mp3",
       img: frank,
-      desc: "i love frank ocean",
+      desc: "",
       uniqueId: 1
     },
     {
       title:"savior complex, by phoebe bridgers",
       src:"/saviorComplex.mp3",
       img: phoebe,
-      desc: "punisher?? i barely know her !",
+      desc: "",
       uniqueId: 2
 
     },

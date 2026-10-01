@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import styles from './MusicCard.module.css'
-import { useMusic } from '../context/MusicContext'
+import styles from '/src/components/MusicCard.module.css'
+import { useMusic } from '/src/context/MusicContext'
 
 export default function MusicCard({ music }) {
   const audioRef = useRef(null)

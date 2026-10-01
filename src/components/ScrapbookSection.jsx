@@ -1,6 +1,6 @@
-import styles from './ScrapbookSection.module.css'
-import PhotoGallery from './PhotoGallery'
-import CurrentlyCard from './CurrentlyCard'
+import styles from '/src/components/ScrapbookSection.module.css'
+import PhotoGallery from '/src/components/PhotoGallery.jsx'
+import CurrentlyCard from '/src/components/CurrentlyCard.jsx'
 
 export default function ScrapbookSection() {
     return (

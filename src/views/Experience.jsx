@@ -1,4 +1,4 @@
-import styles from './Experience.module.css'
+import styles from '/src/views/Experience.module.css'
 
 // Edit these three lists with your own info - same pattern as your projects/music arrays
 const skills = ["JavaScript", "React", "Python", "Java", "SQL", "Figma", "HTML", "CSS", "C++", "C#"]

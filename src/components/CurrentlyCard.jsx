@@ -1,4 +1,4 @@
-import styles from './CurrentlyCard.module.css'
+import styles from '/src/components/CurrentlyCard.module.css'
 
 // Update this whenever your "currently" changes - same array pattern as everything else
 const currentlyList = [

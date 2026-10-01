@@ -1,5 +1,5 @@
-import ProjectCard from '../components/ProjectCard'
-import styles from './Projects.module.css'
+import ProjectCard from '/src/components/ProjectCard'
+import styles from '/src/views/Projects.module.css'
 import chat from '../assets/chat.png'
 
 const projectlist = [

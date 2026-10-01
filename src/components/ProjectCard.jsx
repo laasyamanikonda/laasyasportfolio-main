@@ -1,4 +1,4 @@
-import styles from './ProjectCard.module.css';
+import styles from '/src/components/ProjectCard.module.css';
 
 export default function ProjectCard(props) {
   const { title, website, img, desc } = props.project;
