@@ -5,7 +5,7 @@ import CurrentlyCard from '/src/components/CurrentlyCard.jsx'
 export default function ScrapbookSection() {
     return (
         <div className={styles['wrapper']}>
-            <h2 className={styles['heading']}>a lil scrapbook</h2>
+            <h2 className={styles['heading']}>my scrapbook--</h2>
             <div className={styles['row']}>
                 <PhotoGallery />
                 <CurrentlyCard />

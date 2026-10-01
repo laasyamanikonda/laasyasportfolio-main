@@ -8,24 +8,23 @@ import About from "../views/About";
 import Experience from "../views/Experience";
 import Projects from "../views/Projects";
 import FunStuff from "../views/FunStuff";
-import Photos from "../views/Photos";
 
 export default function App() {
-  return (
-    <MusicProvider>
-      <BrowserRouter>
-        <NavBar />
+    return (
+        <MusicProvider>
+            <BrowserRouter>
+                <NavBar />
 
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/favorites" element={<FunStuff />} />
-          </Routes>
+                <Routes>
+                    <Route path="/" element={<LandingPage />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/experience" element={<Experience />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/favorites" element={<FunStuff />} />
+                </Routes>
 
-        <NowPlayingWidget />
-      </BrowserRouter>
-    </MusicProvider>
-  );
+                <NowPlayingWidget />
+            </BrowserRouter>
+        </MusicProvider>
+    );
 }

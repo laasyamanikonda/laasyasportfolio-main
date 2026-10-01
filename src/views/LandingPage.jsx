@@ -1,40 +1,40 @@
-import styles from "./LandingPage.module.css"
-import panda from "/src/assets/panda.png"
-import dog from "/src/assets/dog.png"
-import Projects from "/src/views/Projects.jsx"
-import NavBar from "/src/components/NavBar.jsx"
-import FunStuff from '/src/views/FunStuff.jsx'
-import About from '/src/views/About.jsx'
-import Experience from '/src/views/Experience.jsx'
+import styles from "./LandingPage.module.css";
+import PhotoGallery from "../components/PhotoGallery";
 
-function LandingPage() {
+export default function LandingPage() {
     return (
         <div>
-            <div className={styles['landing-container']}>
-                {/* We should also have a navigation bar for all our different pages - Check Components to see a NavBar that is already made for you */}
-                <NavBar/>
-                <div className={styles['main-container']}>
-                    <div className={styles['landing-left']}>
-                       {/* Let's fill this flex box with our name and credentials! */}
-                       <h2>hi! my name is....</h2>
-                       <h1 className = {styles['typewriter']}>laasya manikonda ♡</h1>
+            <div className={styles["landing-container"]}>
+                <div className={styles["main-container"]}>
+                    <div className={styles["landing-left"]}>
+                        <h2>hi! my name is...</h2>
+
+                        <h1 className={styles["typewriter"]}> laasya manikonda♡
+                        </h1>
+
+                        <p className={styles["about-text"]}>
+                            Welcome to my personal website! I'm a Computer Science student <a href="https://www.stanford.edu/" target="_blank" rel="noopener noreferrer">@Stanford</a> who loves all things building, learning, and exploring the intersections of technology, 
+                            ethics, math, & design. I'm especially passionate about AI safety and building data-driven, large-scale solutions to complex problems.
+                        </p>
+                        <p className={styles["about-text"]}>
+                            When I'm not coding, you can find me reading a good mystery, drinking strawberry matcha, or taking a long walk! 
+                            Feel free to explore my portfolio to learn more about my skills/experience, projects, and (the fun part...) my top books, movies, and songs. Thanks for stopping by!
+                        </p>
                     </div>
 
-                    {/* This is the image of the panda that you already see on your website */}
-                    <div className={styles['landing-right']}>
-                        <img src={dog} alt="Logo" width={400} />
+                    <div className={styles["landing-right"]}>
+                        <video
+                            src="/introduction.mp4"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            width={300}
+                        />
                     </div>
                 </div>
             </div>
-            {/* CHANGED: added About + Experience sections above Projects/FunStuff */}
-            <About/>
-            <Experience/>
-            <Projects/>
-            <FunStuff/>
+
         </div>
-
-
-    )
+    );
 }
-
-export default LandingPage

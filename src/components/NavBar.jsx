@@ -8,9 +8,6 @@ export default function NavBar() {
       <NavLink to="/" end className={styles["nav-item"]}>
         home
       </NavLink>
-      <NavLink to="/about" className={styles["nav-item"]}>
-        about
-      </NavLink>
       <NavLink to="/experience" className={styles["nav-item"]}>
         experience
       </NavLink>

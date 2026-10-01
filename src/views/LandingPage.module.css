@@ -1,12 +1,10 @@
 .main-container {
-    height: 90vh;
+    height: 80vh;
     display: flex;
     align-items: center;
-    margin-right: 5rem;
-    margin-left: 5rem; 
+    padding-right: 20px;
+    padding-left: 20px; 
     color: #fb918f;
-    /* background-color: green; */
-   
 }
 
 .landing-container {
@@ -35,14 +33,17 @@
       blink-caret 1.0s step-end infinite;
   }
 
-  .landing-right{
-    /* background-color: red; */
-  }
+.landing-right {
+    position: relative;
+    left: 125px;
+    width: 300px;
+    height: auto;
+}
   
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 100%}
   }
   
   /* The typewriter cursor effect */
@@ -50,3 +51,10 @@
     from, to { border-color: transparent }
     50% { border-color: #fba58b; }
   }
+  .about-text {
+    max-width: 600px;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: "Quicksand", serif;
+}
