@@ -1,0 +1,26 @@
+.corkboard {
+    background-color: #c6e99f;
+    background-image: radial-gradient(#b3ebf2 1px, transparent 1px);
+    background-size: 12px 12px;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    flex: 1 1 400px;
+}
+
+.empty {
+    color: #b8e;
+    font-style: italic;
+    font-family: "Quicksand", serif;
+    max-width: 240px;
+    text-align: center;
+}
+
+.empty code {
+    background: #ffee8c;
+    padding: 0.1rem 0.35rem;
+    border-radius: 0.25rem;
+}

@@ -1,0 +1,43 @@
+.card {
+    background-color: #ffee8c;
+    background-image: repeating-linear-gradient(
+        #ffee8c,
+        #ffee8c 27px,
+        #b3ebf2 28px
+    );
+    color: #b8e;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    width: 260px;
+    box-shadow: 4px 4px 0 #b8e;
+    transform: rotate(2deg);
+    flex-shrink: 0;
+}
+
+.heading {
+    font-family: "Quicksand", serif;
+    margin-bottom: 0.75rem;
+}
+
+.list {
+    list-style: none;
+}
+
+.list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    line-height: 28px;
+}
+
+.label {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    align-self: center;
+}
+
+.value {
+    font-weight: 600;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,22 @@
+.main-nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    width: fit-content;
+    margin: 1rem auto 0;
+    padding: 0.7rem 1.2rem;
+    border-radius: 1.5rem;
+    background-color: #b8e;
+    top: 0;
+    position: sticky;
+    z-index: 10;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #ffee8c;
+}
+
+.nav-item:hover {
+    font-weight: bold;
+}

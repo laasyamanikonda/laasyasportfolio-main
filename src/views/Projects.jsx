@@ -4,7 +4,7 @@ import chat from '../assets/chat.png'
 
 const projectlist = [
     {
-      title:"cutesey calculator",
+      title:"calculator",
       website:"https://laasyamanikonda.github.io/calculator/",
       desc: "desc",
       uniqueId: 1
