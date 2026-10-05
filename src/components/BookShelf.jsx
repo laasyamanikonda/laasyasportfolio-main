@@ -7,7 +7,7 @@ const FALLBACK_COLORS = ['#ffb7ce', '#c6e99f', '#ffee8c', '#b8e', '#b3ebf2']
 const textFor = (bg) => (bg === '#b8e' ? '#ffee8c' : '#b8e')
 // little things that sit at the end of each shelf
 const DECOR = ['🪴', '🕯️', '☕', '🌼']
-const BOOKS_PER_SHELF = 6
+const BOOKS_PER_SHELF = 4
 
 // small deterministic "random" so heights/widths look hand-placed but never
 // change between renders
@@ -105,9 +105,7 @@ export default function BookShelf({ books }) {
             </button>
           </div>
         </div>
-      ) : (
-        <p className={styles['hint']}>pull a book off the shelf</p>
-      )}
+      ) : null}
     </div>
   )
 }

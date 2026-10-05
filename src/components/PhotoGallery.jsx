@@ -28,9 +28,9 @@ const photos = [
     { img: cuzzo, caption: "my baby cousin!", rotation: 3, uniqueId: 6 },
     { img: grad, caption: "graduated", rotation: 1, uniqueId: 8 },
     { img: matcha, caption: "@ Match | A, Chicago, IL", rotation: 2, uniqueId: 4 },
-    { img: medha, caption: "me + my bsf Medha", rotation: -3, uniqueId: 7 },
+    { img: medha, caption: "me & my best friend, Medha <3", rotation: -3, uniqueId: 7 },
     { img: moon, caption: "moon <3", rotation: -2, uniqueId: 5 },
-    { img: diya, caption: "me + my bsf Diya", rotation: -3, uniqueId: 9},
+    { img: diya, caption: "me & my best friend, Diya <3", rotation: -3, uniqueId: 9},
 
 
 ]

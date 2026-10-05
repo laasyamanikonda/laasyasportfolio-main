@@ -1,5 +1,4 @@
 import styles from "./LandingPage.module.css";
-import PhotoGallery from "../components/PhotoGallery";
 
 export default function LandingPage() {
     return (

@@ -2,9 +2,9 @@ import styles from '/src/components/CurrentlyCard.module.css'
 
 // Update this whenever your "currently" changes - same array pattern as everything else
 const currentlyList = [
-    { label: "reading", value: "book title", uniqueId: 1 },
+    { label: "reading", value: "Hunger Games #5: SOTR", uniqueId: 1 },
     { label: "(re)watching", value: "Gilmore Girls!", uniqueId: 2 },
-    { label: "making", value: "project name", uniqueId: 3 },
+    { label: "making", value: "coming soon!! :)", uniqueId: 3 },
 ]
 
 export default function CurrentlyCard() {

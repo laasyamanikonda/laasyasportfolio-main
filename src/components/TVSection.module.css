@@ -88,7 +88,7 @@
 .screen {
     position: relative;
     flex: 1;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 2 / 3;
     padding: 0;
     border: 5px solid var(--ink);
     border-radius: 1.1rem / 1.4rem;
@@ -103,11 +103,24 @@
     outline-offset: 2px;
 }
 
+/* the whole poster, never cropped */
 .poster {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* blurred, enlarged copy of the poster that fills the leftover space */
+.poster-bg {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
+    filter: blur(14px) saturate(1.1);
+    transform: scale(1.25);
 }
 
 .poster-fallback,

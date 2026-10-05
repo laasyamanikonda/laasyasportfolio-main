@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import styles from '/src/components/TVSection.module.css'
 
-const TV_COLORS = ['#fb918f', '#8fb8a8', '#e9b872', '#9d8fc4', '#7fa7c9', '#d98fa8']
+// TV body colors cycle through the palette (variables are defined in index.css)
+const TV_COLORS = ['var(--green)', 'var(--pink)', 'var(--yellow)', 'var(--aqua)', 'var(--lavender)']
 const STATIC_MS = 350
 
 function TV({ item, index }) {
@@ -45,7 +46,11 @@ function TV({ item, index }) {
               <p className={styles['info-desc']}>{item.desc}</p>
             </div>
           ) : item.img ? (
-            <img src={item.img} alt={item.title} className={styles['poster']} />
+            <>
+              {/* blurred copy fills the screen behind the full, uncropped poster */}
+              <img src={item.img} alt="" aria-hidden="true" className={styles['poster-bg']} />
+              <img src={item.img} alt={item.title} className={styles['poster']} />
+            </>
           ) : (
             <div className={styles['poster-fallback']}>{item.title}</div>
           )}

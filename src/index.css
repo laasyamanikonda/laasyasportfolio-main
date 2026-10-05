@@ -1,15 +1,29 @@
+/* ---- palette: change a color here and it updates everywhere ---- */
+:root {
+  --green: #e0f5cc;
+  --pink: #ffdce6;
+  --yellow: #fff7c9;
+  --lavender: #ddc9f7;
+  --aqua: #d6f4f8;
+  /* deeper lavender used for text + outlines so the pastels stay readable */
+  --ink: #6b4f4f;
+
+  color: var(--ink);
+  background-color: var(--yellow);
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Quicksand", serif;
+  font-family: "Quicksand", sans-serif;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button {
+  background-color: var(--pink);
+  color: var(--ink);
+}
+
+a {
+  color: var(--ink);
+  font-weight: 700;
 }
