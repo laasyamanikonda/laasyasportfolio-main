@@ -1,19 +1,31 @@
+/* ---- palette: change a color here and it updates everywhere ---- */
+:root {
+  --green: #e0f5cc;
+  --pink: #ffdce6;
+  --yellow: #fff7c9;
+  --lavender: #ddc9f7;
+  --aqua: #d6f4f8;
+  /* deeper lavender used for text + outlines so the pastels stay readable */
+  --ink: #6b46b8;
+  /* rainbow strip that sits at the top of every page */
+  --stripe: linear-gradient(90deg, var(--green), var(--pink), var(--yellow), var(--lavender), var(--aqua));
+
+  color: var(--ink);
+  background-color: var(--yellow);
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Quicksand", sans-serif;
 }
 
-:root {
-  color: #b8e;
-  background-color: #ffee8c;
-}
-
 button {
-  background-color: #ffb7ce;
+  background-color: var(--pink);
+  color: var(--ink);
 }
 
 a {
-  color: #b8e;
+  color: var(--ink);
   font-weight: 700;
 }

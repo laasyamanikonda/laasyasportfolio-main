@@ -1,13 +1,35 @@
 .main-container {
-    background-color: #e9e4f0;
-    color: #5c5470;
+    background-color: var(--aqua);
+    color: var(--ink);
     padding: 3rem;
+    border-top: 14px solid;
+    border-image: var(--stripe) 1;
+}
+
+.main-container > h1 {
+    display: block;
+    width: fit-content;
+    background-color: var(--lavender);
+    border: 3px solid var(--ink);
+    border-radius: 1.5rem;
+    padding: 0.3rem 1.25rem;
+    box-shadow: 4px 4px 0 var(--ink);
 }
 
 .section {
     max-width: 700px;
     margin: 2rem auto 0;
     font-family: "Quicksand", serif;
+}
+
+.section > h2 {
+    display: block;
+    width: fit-content;
+    background-color: var(--pink);
+    border: 3px solid var(--ink);
+    border-radius: 1.5rem;
+    padding: 0.2rem 1rem;
+    box-shadow: 3px 3px 0 var(--ink);
 }
 
 .skills-list {
@@ -17,22 +39,37 @@
     margin-top: 0.75rem;
 }
 
+/* skill pills cycle through the whole palette */
 .skill-pill {
-    background-color: #cbd5c0;
-    color: #3f4a3c;
+    color: var(--ink);
+    border: 2px solid var(--ink);
     padding: 0.4rem 0.9rem;
     border-radius: 999px;
     font-size: 0.9rem;
+    font-weight: 600;
 }
+
+.skill-pill:nth-child(5n + 1) { background-color: var(--green); }
+.skill-pill:nth-child(5n + 2) { background-color: var(--pink); }
+.skill-pill:nth-child(5n + 3) { background-color: var(--yellow); }
+.skill-pill:nth-child(5n + 4) { background-color: var(--lavender); }
+.skill-pill:nth-child(5n + 5) { background-color: var(--aqua); }
 
 .entry {
     margin-top: 1.25rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(92, 84, 112, 0.2);
+    padding: 1rem 1.25rem;
+    background-color: var(--yellow);
+    border: 3px solid var(--ink);
+    border-radius: 1rem;
+    box-shadow: 6px 6px 0 var(--lavender);
+}
+
+/* awards get their own color */
+.section:nth-of-type(3) .entry {
+    background-color: var(--green);
 }
 
 .period {
     font-size: 0.85rem;
-    opacity: 0.75;
     margin: 0.15rem 0 0.35rem;
 }

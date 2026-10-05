@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     padding-right: 20px;
-    padding-left: 20px; 
-    color: #fb918f;
+    padding-left: 20px;
+    color: var(--ink);
 }
 
 .landing-container {
@@ -12,26 +12,49 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--yellow);
+    border-top: 14px solid;
+    border-image: var(--stripe) 1;
 }
 
 .landing-left {
   font-family: "Quicksand", serif;
 }
 
+/* "hi! my name is..." */
+.landing-left > h2 {
+    display: block;
+    width: fit-content;
+    background-color: var(--pink);
+    border: 3px solid var(--ink);
+    border-radius: 1.5rem;
+    padding: 0.3rem 1.1rem;
+    box-shadow: 4px 4px 0 var(--ink);
+    margin-bottom: 1rem;
+}
+
 .main-heading {
     font-size: 5rem;
 }
-  .typewriter {
+
+/* the name */
+.typewriter {
     font-size: 3rem;
+    background-color: var(--lavender);
+    color: var(--ink);
+    border-radius: 1rem;
+    padding: 0.2rem 0;
+    text-indent: 0.6rem;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #fba58b; /* The typwriter cursor */
+    border-right: .15em solid var(--ink); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    animation: 
+    animation:
       typing 3.5s steps(40, end),
       blink-caret 1.0s step-end infinite;
-  }
+}
 
 .landing-right {
     position: relative;
@@ -39,22 +62,39 @@
     width: 300px;
     height: auto;
 }
-  
-  /* The typing effect */
-  @keyframes typing {
+
+.landing-right video {
+    display: block;
+    border: 3px solid var(--ink);
+    border-radius: 1.5rem;
+    box-shadow: 8px 8px 0 var(--pink);
+}
+
+/* The typing effect */
+@keyframes typing {
     from { width: 0 }
     to { width: 100%}
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #fba58b; }
-  }
-  .about-text {
+    50% { border-color: var(--ink); }
+}
+
+/* the two about paragraphs, each its own color */
+.about-text {
     max-width: 600px;
     margin-top: 1.5rem;
     font-size: 1rem;
     line-height: 1.6;
     font-family: "Quicksand", serif;
+    font-weight: 600;
+    padding: 1rem 1.25rem;
+    border: 3px solid var(--ink);
+    border-radius: 1.25rem;
+    box-shadow: 4px 4px 0 var(--ink);
 }
+
+.about-text:nth-of-type(odd) { background-color: var(--aqua); }
+.about-text:nth-of-type(even) { background-color: var(--green); }

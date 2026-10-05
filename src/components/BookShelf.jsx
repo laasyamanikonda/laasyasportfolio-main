@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import styles from '/src/components/BookShelf.module.css'
 
-// spine colors cycle if you don't give a book its own `color`
-const FALLBACK_COLORS = ['#fb918f', '#8fb8a8', '#e9b872', '#9d8fc4', '#7fa7c9', '#d98fa8']
+// spine colors cycle if you don't give a book its own `color` (palette only)
+const FALLBACK_COLORS = ['#ffb7ce', '#c6e99f', '#ffee8c', '#b8e', '#b3ebf2']
+// text color that stays readable on each spine: yellow on lavender, lavender on the rest
+const textFor = (bg) => (bg === '#b8e' ? '#ffee8c' : '#b8e')
 // little things that sit at the end of each shelf
 const DECOR = ['🪴', '🕯️', '☕', '🌼']
 const BOOKS_PER_SHELF = 6
@@ -27,6 +29,10 @@ export default function BookShelf({ books }) {
 
   const toggle = (id) => setSelectedId((cur) => (cur === id ? null : id))
 
+  const selectedBg = selected
+    ? selected.color || FALLBACK_COLORS[books.indexOf(selected) % FALLBACK_COLORS.length]
+    : null
+
   return (
     <div className={styles['wrapper']}>
       <div className={styles['bookcase']}>
@@ -37,6 +43,7 @@ export default function BookShelf({ books }) {
                 const i = r * BOOKS_PER_SHELF + c
                 const { height, width } = spineSize(i)
                 const isOpen = book.uniqueId === selectedId
+                const bg = book.color || FALLBACK_COLORS[i % FALLBACK_COLORS.length]
                 return (
                   <button
                     key={book.uniqueId}
@@ -45,8 +52,8 @@ export default function BookShelf({ books }) {
                     style={{
                       height,
                       width,
-                      backgroundColor: book.color || FALLBACK_COLORS[i % FALLBACK_COLORS.length],
-                      color: book.textColor || '#fff',
+                      backgroundColor: bg,
+                      color: book.textColor || textFor(bg),
                     }}
                     onClick={() => toggle(book.uniqueId)}
                     aria-pressed={isOpen}
@@ -73,8 +80,8 @@ export default function BookShelf({ books }) {
           <div
             className={styles['cover']}
             style={{
-              backgroundColor:
-                selected.color || FALLBACK_COLORS[books.indexOf(selected) % FALLBACK_COLORS.length],
+              backgroundColor: selectedBg,
+              color: selected.textColor || textFor(selectedBg),
             }}
           >
             {selected.img ? (

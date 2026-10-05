@@ -3,10 +3,11 @@
     padding: 0 3rem;
 }
 
+/* label styling + color come from the heading rules in FunStuff.module.css */
 .heading {
     font-family: "Quicksand", serif;
     margin-bottom: 1rem;
-    color: black;
+    color: var(--ink);
 }
 
 .row {

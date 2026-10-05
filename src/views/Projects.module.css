@@ -1,17 +1,31 @@
 .main-container {
-    background-color: #fba58b;
-    color: #F0E6EF;
+    background-color: var(--pink);
+    color: var(--ink);
     padding-top: 3rem;
     padding-bottom: 3rem;
+    border-top: 14px solid;
+    border-image: var(--stripe) 1;
 }
 
 h1 {
     padding-left: 3rem;
 }
 
+.main-container > h1 {
+    display: block;
+    width: fit-content;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem 1.25rem;
+    background-color: var(--aqua);
+    border: 3px solid var(--ink);
+    border-radius: 1.5rem;
+    box-shadow: 4px 4px 0 var(--ink);
+}
+
 .project-container {
     display: flex;
-    flex-direction: wrap;
+    flex-wrap: wrap;
     gap: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;

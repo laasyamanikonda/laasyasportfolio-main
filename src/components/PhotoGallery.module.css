@@ -1,8 +1,10 @@
 .corkboard {
-    background-color: #c9a76c;
-    background-image: radial-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 1px);
-    background-size: 12px 12px;
+    background-color: var(--green);
+    background-image: radial-gradient(var(--pink) 2px, transparent 2px);
+    background-size: 14px 14px;
+    border: 3px solid var(--ink);
     border-radius: 1rem;
+    box-shadow: 6px 6px 0 var(--ink);
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +14,7 @@
 }
 
 .empty {
-    color: #fffdf7;
+    color: var(--ink);
     font-style: italic;
     font-family: "Quicksand", serif;
     max-width: 240px;
@@ -20,7 +22,7 @@
 }
 
 .empty code {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--yellow);
     padding: 0.1rem 0.35rem;
     border-radius: 0.25rem;
 }

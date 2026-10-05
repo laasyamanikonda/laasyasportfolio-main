@@ -1,7 +1,9 @@
 .main-container {
-    background-color: #f4ede4;
-    color: #5c5470;
+    background-color: var(--lavender);
+    color: var(--ink);
     padding: 3rem;
+    border-top: 14px solid;
+    border-image: var(--stripe) 1;
 }
 
 .project-container {
@@ -19,3 +21,22 @@ h1 {
 h2 {
     margin-bottom: 1.5rem;
 }
+
+/* headings become little colored labels */
+.main-container h1,
+.main-container h2 {
+    display: block;
+    width: fit-content;
+    border: 3px solid var(--ink);
+    border-radius: 1.5rem;
+    padding: 0.3rem 1.1rem;
+    box-shadow: 4px 4px 0 var(--ink);
+}
+
+.main-container h1 { background-color: var(--yellow); }
+
+/* music / books / tv / scrapbook each get a different color */
+.main-container > div:nth-of-type(1) h2 { background-color: var(--aqua); }
+.main-container > div:nth-of-type(2) h2 { background-color: var(--green); }
+.main-container > div:nth-of-type(3) h2 { background-color: var(--pink); }
+.main-container > div:nth-of-type(4) h2 { background-color: var(--yellow); }
