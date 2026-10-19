@@ -62,17 +62,17 @@ const booklist = [
   { uniqueId: 2, title: 'Big Nate: On a Roll', author: 'Lincoln Peirce', rating: 4, img: bigNate, desc: 'middle grade: the first novel i ever read :)' },
   { uniqueId: 3, title: 'Wild Geese', author: 'Mary Oliver', rating: 5, img: wildGeese, desc: 'poem: speaks for itself' },
   { uniqueId: 4, title: 'Anxious People', author: 'Frederick Backman', rating: 5, img: anxiousPeople, desc: 'literary fiction: my favorite book of all time!' },
-  { uniqueId: 5, title: 'Frankenstein', author: 'Mary Shelley', rating: 5, img: frankenstein, desc: 'write why you love it here!' },
+  { uniqueId: 5, title: 'Frankenstein', author: 'Mary Shelley', rating: 5, img: frankenstein, desc: 'a classic for a reason!' },
   { uniqueId: 6, title: 'The Nightingale', author: 'Kristin Hannah', rating: 4, img: nightingale, desc: 'historical fiction: powerful and very, very sad :(' },
   { uniqueId: 7, title: 'Educated', author: 'Tara Westover', rating: 5, img: educated, desc: 'memoir: incredibly moving and inspiring!!' },
-  { uniqueId: 8, title: 'Carrie Soto is Back', author: 'Taylor Jenkins Reid', rating: 5, img: carrieSoto, desc: 'literary fiction:can you tell i love Taylor Jenkins Reid???? a powerful story about women & their ambitions' },
+  { uniqueId: 8, title: 'Carrie Soto is Back', author: 'Taylor Jenkins Reid', rating: 5, img: carrieSoto, desc: 'literary fiction: can you tell i love Taylor Jenkins Reid???? a powerful story about women & their ambitions' },
 
 ]
 
 // PLACEHOLDERS: kind is 'show' or 'movie'. optional: img (poster), color (tv body)
 const screenlist = [
   { uniqueId: 1, kind: 'show', title: 'Fleabag', year: '2016\u20132019', desc: 'beautifully written: favorite show of all time', img: fleabag },
-  { uniqueId: 2, kind: 'movie', title: 'La La Land', year: '2016', img: laLaLand, desc: 'write why you love it here!' },
+  { uniqueId: 2, kind: 'movie', title: 'La La Land', year: '2016', img: laLaLand, desc: 'one of the most realistic, haunting depictions of love' },
   { uniqueId: 3, kind: 'show', title: 'Gilmore Girls', year: '2000\u20132007', desc: 'the ultimate autumn comfort show', img: gilmoreGirls},
   { uniqueId: 5, kind: 'movie', title: 'Hunger Games: Mockingjay', year: '2015', img: hungerGames, desc: 'best dystopian film of all time!' },
   { uniqueId: 6, kind: 'movie', title: 'Everything Everywhere All at Once', year: '2022', desc: 'so, so moving and unique: never seen anything else like it!', img: everythingEverywhere },
